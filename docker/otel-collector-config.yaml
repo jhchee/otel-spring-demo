@@ -18,7 +18,7 @@ exporters:
     format: proto
 
   otlp/jaeger:
-    endpoint: jaeger-all-in-one:4318
+    endpoint: jaeger-all-in-one:4317
     tls:
       insecure: true
 
