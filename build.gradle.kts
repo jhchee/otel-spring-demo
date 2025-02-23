@@ -22,6 +22,7 @@ dependencyManagement {
 	imports {
 		// required by opentelemetry-spring-boot-starter
 		mavenBom("io.opentelemetry.instrumentation:opentelemetry-instrumentation-bom:2.13.1")
+		mavenBom("io.awspring.cloud:spring-cloud-aws-dependencies:3.2.0")
 	}
 }
 
@@ -34,6 +35,7 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("io.opentelemetry.instrumentation:opentelemetry-spring-boot-starter")
 	implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.5")
+	implementation("io.awspring.cloud:spring-cloud-aws-starter-sqs")
 
 	// test dependencies
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
