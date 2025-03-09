@@ -1,4 +1,4 @@
-package github.jhchee.otel.demo.application1.model
+package github.jhchee.otel.demo.application2.model
 
 import jakarta.persistence.Entity
 import jakarta.persistence.GeneratedValue

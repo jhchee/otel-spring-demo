@@ -1,4 +1,4 @@
-package github.jhchee.otel.demo.application1.configuration
+package github.jhchee.otel.demo.application2.configuration
 
 import io.awspring.cloud.sqs.config.SqsMessageListenerContainerFactory
 import io.awspring.cloud.sqs.operations.SqsTemplate

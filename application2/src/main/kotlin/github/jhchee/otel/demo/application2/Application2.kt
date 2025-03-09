@@ -1,4 +1,4 @@
-package github.jhchee.otel.demo.application1
+package github.jhchee.otel.demo.application2
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

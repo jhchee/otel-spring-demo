@@ -6,11 +6,11 @@ plugins {
 group = "github.jhchee.otel.application1"
 version = "0.0.1-SNAPSHOT"
 
-
 dependencies {
     // application dependencies
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+    implementation("org.springframework.kafka:spring-kafka")
     implementation("org.postgresql:postgresql")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
@@ -21,6 +21,7 @@ dependencies {
 
     // test dependencies
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+    testImplementation("org.springframework.kafka:spring-kafka-test")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
