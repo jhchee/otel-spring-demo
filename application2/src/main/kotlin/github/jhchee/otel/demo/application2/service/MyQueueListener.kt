@@ -5,9 +5,9 @@ import org.springframework.messaging.MessageHeaders
 import org.springframework.messaging.handler.annotation.Headers
 import org.springframework.stereotype.Component
 
-@Component
+//@Component
 class MyQueueListener {
-    @SqsListener("myQueue")
+    @SqsListener("my-queue")
     fun listen(message: String?, @Headers headers: MessageHeaders) {
         println(message)
     }

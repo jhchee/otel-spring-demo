@@ -17,7 +17,6 @@ class DemoController(private val inventoryRepository: InventoryRepository, priva
             name = "Item #" + Random.nextInt()
         })
         kafkaTemplate.send("test-otel", "hello");
-        sqsTemplate.send("myQueue", "Hello, SQS!")
         return "Hello, World!"
     }
 }
