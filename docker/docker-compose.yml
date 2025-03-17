@@ -18,6 +18,17 @@ services:
     ports:
       - "9411:9411"
 
+#  otel-demo-application-1:
+#    container_name: otel-demo-application-1
+#    image: otel-demo-application
+#    build:
+#      context: ../
+#      dockerfile: Dockerfile
+#    environment:
+#      - OTEL_EXPORTER_OTLP_ENDPOINT = "http://otel-collector:4318"
+#    ports:
+#      - "8080:8080"
+
   tempo:
     image: grafana/tempo:latest
     command: [ "-config.file=/etc/tempo.yaml" ]
