@@ -30,7 +30,6 @@ public class PostgresConfig {
         props.put("username", "postgres");
         props.put("password", "postgres");
         HikariConfig hc = new HikariConfig(props);
-        hc.setPoolName("bve-postgres-pool");
         hc.addDataSourceProperty("stringtype", "unspecified");
         hc.setConnectionTimeout(1000 * 60);
         hc.setMaxLifetime(1000 * 60 * 3);

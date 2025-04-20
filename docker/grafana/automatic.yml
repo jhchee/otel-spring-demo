@@ -7,8 +7,19 @@ datasources:
     url: http://prometheus:9090
     access: proxy
     basicAuth: false
+    editable: true
     jsonData:
       httpMethod: GET
+
+  - name: Loki
+    uid: loki
+    type: loki
+    url: http://loki:3100
+    access: proxy
+    basicAuth: false
+    editable: true
+    jsonData:
+      maxLines: 1000
 
   - name: Tempo
     type: tempo
@@ -16,12 +27,10 @@ datasources:
     url: http://tempo:3200
     access: proxy
     basicAuth: false
-    isDefault: true
+    editable: true
     jsonData:
       httpMethod: GET
 #      tracesToLogsV2:
-#        # Field with an internal link pointing to a logs data source in Grafana.
-#        # datasourceUid value must match the uid value of the logs data source.
 #        datasourceUid: 'loki'
 #        spanStartTimeShift: '-1h'
 #        spanEndTimeShift: '1h'
@@ -46,10 +55,10 @@ datasources:
 #        query: 'method="$${__span.tags.method}"'
       serviceMap:
         datasourceUid: 'prom'
-      nodeGraph:
-        enabled: true
-      search:
-        hide: false
+#      nodeGraph:
+#        enabled: true
+#      search:
+#        hide: false
 #      traceQuery:
 #        timeShiftEnabled: true
 #        spanStartTimeShift: '-1h'
