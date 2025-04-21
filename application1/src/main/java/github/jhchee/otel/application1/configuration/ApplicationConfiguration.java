@@ -1,4 +1,4 @@
-package main.github.jhchee.otel.application1.configuration;
+package github.jhchee.otel.application1.configuration;
 
 import github.jhchee.otel.domain.configuration.PostgresConfig;
 import org.springframework.context.annotation.Configuration;

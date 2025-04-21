@@ -1,4 +1,4 @@
-package main.github.jhchee.otel.application1.configuration;
+package github.jhchee.otel.application1.configuration;
 
 import org.apache.kafka.clients.admin.AdminClientConfig;
 import org.apache.kafka.clients.admin.NewTopic;

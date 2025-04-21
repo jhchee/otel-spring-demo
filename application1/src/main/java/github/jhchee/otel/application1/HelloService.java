@@ -1,4 +1,4 @@
-package main.github.jhchee.otel.application1;
+package github.jhchee.otel.application1;
 
 import io.opentelemetry.api.baggage.Baggage;
 import io.opentelemetry.api.trace.Span;

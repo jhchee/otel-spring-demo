@@ -1,9 +1,9 @@
-package main.github.jhchee.otel.application1.controller;
+package github.jhchee.otel.application1.controller;
 
 import github.jhchee.otel.domain.persistence.Message;
 import github.jhchee.otel.domain.persistence.MessageRepository;
 import lombok.RequiredArgsConstructor;
-import main.github.jhchee.otel.application1.HelloService;
+import github.jhchee.otel.application1.HelloService;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
